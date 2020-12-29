@@ -25,10 +25,6 @@ export class AppComponent implements OnInit {
     console.log(e);
   }
 
-  clearForm(e) {
-    console.log(e);
-  }
-
   ngOnInit() {
   }
 
