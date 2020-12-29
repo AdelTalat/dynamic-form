@@ -1,0 +1,13 @@
+
+
+<div class="mb-2" [formGroup]="group">
+  <div *ngFor="let opt of config.options">
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" [formControlName]="config.name" [value]="opt.key" [id]="opt.key">
+        <label class="custom-control-label" [for]="opt.key">{{ opt.label }}</label>
+    </div>
+  </div>
+</div>
+
+
+

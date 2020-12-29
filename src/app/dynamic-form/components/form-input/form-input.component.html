@@ -1,0 +1,7 @@
+<div class="form-group" [formGroup]="group">
+	<label>{{ config.name }}</label>
+	<input [placeholder]="config.placeholder" [formControlName]="config.name" class="form-control">
+	<div *ngIf="group.get(config.name).touched && group.get(config.name).hasError('required')">{{ config.label }} is Required</div>
+	<div *ngIf="group.get(config.name).touched && group.get(config.name).hasError('pattern')">Invalid format</div>
+	<div *ngIf="group.get(config.name).touched && group.get(config.name).hasError(config.name)">Invalid {{ config.label }} </div>
+</div>

@@ -1,0 +1,5 @@
+<div [formGroup]="group" class="mt-3">
+	<button class="btn btn-primary" (click)="changeSrc(config.name)" [disabled]="config.disabled" type="submit">
+		{{ config.label }}
+	</button>
+</div>
